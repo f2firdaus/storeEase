@@ -1,7 +1,11 @@
-import React from "react";
+import AuthForm from "@/components/AuthForm";
 
-const SignIn = () => {
-  return <div>Signin</div>;
-};
+import { z } from "zod";
+
+const formSchema = z.object({
+  username: z.string().min(2).max(50),
+});
+
+const SignIn = () => <AuthForm type="sign-in" />;
 
 export default SignIn;

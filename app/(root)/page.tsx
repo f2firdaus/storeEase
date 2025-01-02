@@ -1,9 +1,8 @@
-
-
-export default function Home() {
+const Dashboard = () => {
   return (
     <div className="flex-center h-screen">
       <h1 className="h1">The only storage</h1>
-   </div>
+    </div>
   );
-}
+};
+export default Dashboard;
